@@ -1,5 +1,5 @@
 // Vercel Serverless Function Entry Point
-import type { VercelRequest, VercelResponse } from '@vercel/node';
+import type { Request, Response } from 'express';
 
 // Load environment variables first
 import dotenv from 'dotenv';
@@ -10,6 +10,6 @@ import { createApp } from '../src/app';
 
 const app = createApp();
 
-export default function handler(req: VercelRequest, res: VercelResponse) {
-  return app(req, res);
+export default function handler(req: Request, res: Response) {
+  return app(req as any, res as any);
 }
