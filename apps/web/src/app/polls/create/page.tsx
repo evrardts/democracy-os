@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useMutation } from '@tanstack/react-query';
 import { apiClient } from '@/lib/api-client';
 import { useAuthStore } from '@/lib/auth-store';
-import { Poll, CreatePollRequest } from '@democracy-os/shared';
+import { Poll, CreatePollRequest, PollType } from '@democracy-os/shared';
 
 interface PollOption {
   id: string;
@@ -85,7 +85,7 @@ export default function CreatePollPage() {
       const data: CreatePollRequest = {
         title,
         description: description || undefined,
-        pollType: 'quick_poll',
+        pollType: PollType.QUICK_POLL,
         options: filteredOptions.map((opt) => ({ text: opt.text })),
         tags: tagsArray.length > 0 ? tagsArray : undefined,
       };
@@ -102,7 +102,7 @@ export default function CreatePollPage() {
       const pollData: CreatePollRequest = {
         title,
         description: description || undefined,
-        pollType: 'multi_stage',
+        pollType: PollType.MULTI_STAGE,
         options: [], // Options will be generated in stage 3
         tags: tagsArray.length > 0 ? tagsArray : undefined,
       };

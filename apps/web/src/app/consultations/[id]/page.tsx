@@ -19,7 +19,7 @@ type SortType = 'score' | 'newest';
 export default function ConsultationPage() {
   const params = useParams();
   const router = useRouter();
-  const { t } = useTranslation();
+  useTranslation(); // Initialize i18n
   const queryClient = useQueryClient();
   const { user, tenantSlug } = useAuthStore();
   const [sortBy, setSortBy] = useState<SortType>('score');
@@ -303,7 +303,7 @@ export default function ConsultationPage() {
                       </div>
 
                       {/* Voting Buttons */}
-                      {user && currentStage !== 'final_arbitration' && idea.status !== 'rejected' && (
+                      {user && idea.status !== 'rejected' && (
                         <div className="flex items-center gap-2">
                           <button
                             onClick={() => handleVoteIdea(idea.id, 'upvote')}

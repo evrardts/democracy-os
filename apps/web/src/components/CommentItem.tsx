@@ -21,8 +21,8 @@ export default function CommentItem({
   const [showEditHistory, setShowEditHistory] = useState(false);
 
   const isAuthor = currentUserId === comment.userId;
-  const hasUpvoted = comment.userVote === 'upvote';
-  const hasDownvoted = comment.userVote === 'downvote';
+  const hasUpvoted = comment.userVote === VoteType.UPVOTE;
+  const hasDownvoted = comment.userVote === VoteType.DOWNVOTE;
 
   const handleVote = (voteType: VoteType) => {
     onVote(comment.id, voteType);
@@ -39,7 +39,7 @@ export default function CommentItem({
         {/* Vote buttons */}
         <div className="flex flex-col items-center gap-1">
           <button
-            onClick={() => handleVote('upvote')}
+            onClick={() => handleVote(VoteType.UPVOTE)}
             disabled={!currentUserId}
             className={`p-1 rounded hover:bg-gray-100 transition ${
               hasUpvoted ? 'text-primary-600' : 'text-gray-400'
@@ -61,7 +61,7 @@ export default function CommentItem({
             {comment.score}
           </span>
           <button
-            onClick={() => handleVote('downvote')}
+            onClick={() => handleVote(VoteType.DOWNVOTE)}
             disabled={!currentUserId}
             className={`p-1 rounded hover:bg-gray-100 transition ${
               hasDownvoted ? 'text-primary-600' : 'text-gray-400'
@@ -156,7 +156,7 @@ export default function CommentItem({
 
             <div className="space-y-2 mb-6">
               <button
-                onClick={() => handleReport('spam')}
+                onClick={() => handleReport(ReportReason.SPAM)}
                 className="w-full text-left px-4 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition"
               >
                 <div className="font-semibold">Spam</div>
@@ -166,7 +166,7 @@ export default function CommentItem({
               </button>
 
               <button
-                onClick={() => handleReport('hate')}
+                onClick={() => handleReport(ReportReason.HATE)}
                 className="w-full text-left px-4 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition"
               >
                 <div className="font-semibold">Hate Speech</div>
@@ -176,7 +176,7 @@ export default function CommentItem({
               </button>
 
               <button
-                onClick={() => handleReport('harassment')}
+                onClick={() => handleReport(ReportReason.HARASSMENT)}
                 className="w-full text-left px-4 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition"
               >
                 <div className="font-semibold">Harassment</div>
@@ -186,7 +186,7 @@ export default function CommentItem({
               </button>
 
               <button
-                onClick={() => handleReport('off_topic')}
+                onClick={() => handleReport(ReportReason.OFF_TOPIC)}
                 className="w-full text-left px-4 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition"
               >
                 <div className="font-semibold">Off Topic</div>

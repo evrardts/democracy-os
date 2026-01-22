@@ -49,7 +49,7 @@ export default function CreateConsultationPage() {
   const createMutation = useMutation({
     mutationFn: async (data: any) => {
       // Step 1: Create the poll with multi_stage type
-      const poll = await apiClient.post('/api/polls', {
+      const poll = await apiClient.post<{ id: string }>('/api/polls', {
         title: data.title,
         description: data.description,
         category: data.category,

@@ -233,7 +233,7 @@ export default function AuditTrailPage() {
                           </div>
                         </td>
                         <td className="px-6 py-4 text-sm text-gray-600">
-                          {event.targetType}: {event.targetId?.slice(0, 8)}...
+                          {event.entityType}: {event.entityId?.slice(0, 8)}...
                         </td>
                         <td className="px-6 py-4 text-sm text-gray-600">
                           {new Date(event.createdAt).toLocaleString()}
