@@ -1,0 +1,164 @@
+{
+  "app": {
+    "name": "Democracy OS",
+    "tagline": "Democratische Participatie Eenvoudig Gemaakt"
+  },
+  "nav": {
+    "home": "Home",
+    "polls": "Peilingen",
+    "commitments": "Toezeggingen",
+    "login": "Inloggen",
+    "register": "Registreren",
+    "logout": "Uitloggen"
+  },
+  "home": {
+    "hero": {
+      "title": "Democratische Participatie Eenvoudig Gemaakt",
+      "description": "Ga in gesprek met uw gemeenschap, stem anoniem over belangrijke kwesties en houd uw vertegenwoordigers verantwoordelijk met volledige transparantie.",
+      "cta_polls": "Bekijk Actieve Peilingen",
+      "cta_commitments": "Volg Toezeggingen"
+    },
+    "features": {
+      "anonymous": {
+        "title": "Anoniem Stemmen",
+        "description": "Uw stemmen zijn volledig anoniem terwijl dubbele stemming wordt voorkomen door cryptografische nullifiers."
+      },
+      "transparent": {
+        "title": "Volledige Transparantie",
+        "description": "Volg overheidstoezeggingen met volledige versiegeschiedenis en fraudebestendige controletrajecten."
+      },
+      "discussion": {
+        "title": "Gemeenschapsdiscussie",
+        "description": "Neem deel aan gemodereerde discussies met upvoten en rapporteren om kwaliteitsconversaties te behouden."
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welkom Terug",
+      "subtitle": "Log in om deel te nemen aan democratie",
+      "email": "E-mailadres",
+      "password": "Wachtwoord",
+      "submit": "Inloggen",
+      "no_account": "Heeft u geen account?",
+      "register_link": "Registreren"
+    },
+    "register": {
+      "title": "Word lid van Democracy OS",
+      "subtitle": "Maak uw account aan om te beginnen met deelnemen",
+      "display_name": "Weergavenaam",
+      "email": "E-mailadres",
+      "password": "Wachtwoord",
+      "password_hint": "Moet minimaal 8 tekens bevatten met hoofdletter, kleine letter en cijfer",
+      "submit": "Registreren",
+      "have_account": "Heeft u al een account?",
+      "login_link": "Inloggen"
+    }
+  },
+  "polls": {
+    "title": "Actieve Peilingen",
+    "create": "Peiling Maken",
+    "no_polls": "Momenteel geen actieve peilingen",
+    "create_first": "Maak de eerste peiling",
+    "options": "opties",
+    "vote": "Stemmen",
+    "detail": {
+      "back": "Terug naar peilingen",
+      "cast_vote": "Breng uw stem uit",
+      "submit_vote": "Stem Verzenden",
+      "submitting": "Verzenden...",
+      "voted": "U heeft gestemd! U kunt uw stem hieronder bijwerken of de resultaten bekijken.",
+      "results": "Resultaten",
+      "total_votes": "totaal aantal stemmen",
+      "your_vote": "(Uw stem)",
+      "update_vote": "Werk uw stem bij",
+      "update": "Bijwerken",
+      "updating": "Bijwerken..."
+    },
+    "create_poll": {
+      "title": "Nieuwe Peiling Maken",
+      "poll_title": "Peilingtitel",
+      "description": "Beschrijving (optioneel)",
+      "description_placeholder": "Geef meer context over deze peiling...",
+      "options": "Peilingopties",
+      "options_min": "(minimaal 2)",
+      "add_option": "Optie Toevoegen",
+      "remove": "Verwijderen",
+      "tags": "Tags (optioneel)",
+      "tags_placeholder": "Door komma's gescheiden tags (bijv. transport, milieu, budget)",
+      "tags_hint": "Scheid tags met komma's",
+      "save_draft": "Opslaan als Concept",
+      "publish": "Nu Publiceren",
+      "saving": "Opslaan...",
+      "publishing": "Publiceren...",
+      "tips": {
+        "title": "Tips voor het maken van effectieve peilingen:",
+        "clear": "Houd uw vraag helder en beknopt",
+        "balanced": "Bied evenwichtige en onderscheidende opties",
+        "context": "Voeg context toe in de beschrijving om kiezers te helpen beslissen",
+        "tags": "Gebruik tags om mensen te helpen uw peiling te ontdekken",
+        "draft": "Sla eerst op als concept om te beoordelen voordat u publiceert"
+      }
+    }
+  },
+  "comments": {
+    "title": "Discussie",
+    "add": "Voeg een reactie toe",
+    "placeholder": "Deel uw gedachten...",
+    "submit": "Plaats Reactie",
+    "cancel": "Annuleren",
+    "posting": "Plaatsen...",
+    "no_comments": "Nog geen reacties. Wees de eerste om uw gedachten te delen!",
+    "login_prompt": "Log in om deel te nemen aan de discussie",
+    "sort": {
+      "best": "Beste",
+      "newest": "Nieuwste",
+      "controversial": "Controversieel"
+    },
+    "edited": "(bewerkt)",
+    "edit_history": "Bewerkingsgeschiedenis:",
+    "report": {
+      "title": "Reactie Rapporteren",
+      "why": "Waarom rapporteert u deze reactie?",
+      "spam": {
+        "title": "Spam",
+        "description": "Ongewenste commerciële inhoud of herhaalde berichten"
+      },
+      "hate": {
+        "title": "Haatspraak",
+        "description": "Discriminerende of haatdragende taal"
+      },
+      "harassment": {
+        "title": "Intimidatie",
+        "description": "Pesten, bedreigingen of persoonlijke aanvallen"
+      },
+      "off_topic": {
+        "title": "Off Topic",
+        "description": "Niet relevant voor de discussie"
+      },
+      "cancel": "Annuleren",
+      "success": "Reactie gerapporteerd. Bedankt voor het helpen onze gemeenschap veilig te houden."
+    },
+    "reported": "Deze reactie is {{count}} keer gemeld"
+  },
+  "commitments": {
+    "title": "Overheidstoezeggingen",
+    "no_commitments": "Nog geen toezeggingen",
+    "responsible": "Verantwoordelijk:",
+    "budget": "Budget:",
+    "target": "Doel:",
+    "version": "Versie {{version}}",
+    "status": {
+      "planned": "Gepland",
+      "in_progress": "In Uitvoering",
+      "delivered": "Afgeleverd",
+      "cancelled": "Geannuleerd"
+    }
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden",
+    "back_home": "Terug naar home",
+    "characters": "tekens"
+  }
+}

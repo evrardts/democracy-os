@@ -1,0 +1,164 @@
+{
+  "app": {
+    "name": "Democracy OS",
+    "tagline": "Democratic Participation Made Simple"
+  },
+  "nav": {
+    "home": "Home",
+    "polls": "Polls",
+    "commitments": "Commitments",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "home": {
+    "hero": {
+      "title": "Democratic Participation Made Simple",
+      "description": "Engage with your community, vote anonymously on important issues, and hold your representatives accountable with full transparency.",
+      "cta_polls": "View Active Polls",
+      "cta_commitments": "Track Commitments"
+    },
+    "features": {
+      "anonymous": {
+        "title": "Anonymous Voting",
+        "description": "Your votes are completely anonymous while preventing double voting through cryptographic nullifiers."
+      },
+      "transparent": {
+        "title": "Full Transparency",
+        "description": "Track government commitments with complete version history and tamper-resistant audit trails."
+      },
+      "discussion": {
+        "title": "Community Discussion",
+        "description": "Engage in moderated discussions with upvoting and reporting to maintain quality conversations."
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Login to participate in democracy",
+      "email": "Email Address",
+      "password": "Password",
+      "submit": "Login",
+      "no_account": "Don't have an account?",
+      "register_link": "Register"
+    },
+    "register": {
+      "title": "Join Democracy OS",
+      "subtitle": "Create your account to start participating",
+      "display_name": "Display Name",
+      "email": "Email Address",
+      "password": "Password",
+      "password_hint": "Must be at least 8 characters with uppercase, lowercase, and number",
+      "submit": "Register",
+      "have_account": "Already have an account?",
+      "login_link": "Login"
+    }
+  },
+  "polls": {
+    "title": "Active Polls",
+    "create": "Create Poll",
+    "no_polls": "No active polls at the moment",
+    "create_first": "Create the first poll",
+    "options": "options",
+    "vote": "Vote",
+    "detail": {
+      "back": "Back to polls",
+      "cast_vote": "Cast your vote",
+      "submit_vote": "Submit Vote",
+      "submitting": "Submitting...",
+      "voted": "You have voted! You can update your vote below or view the results.",
+      "results": "Results",
+      "total_votes": "total votes",
+      "your_vote": "(Your vote)",
+      "update_vote": "Update your vote",
+      "update": "Update Vote",
+      "updating": "Updating..."
+    },
+    "create_poll": {
+      "title": "Create New Poll",
+      "poll_title": "Poll Title",
+      "description": "Description (optional)",
+      "description_placeholder": "Provide more context about this poll...",
+      "options": "Poll Options",
+      "options_min": "(minimum 2)",
+      "add_option": "Add Option",
+      "remove": "Remove",
+      "tags": "Tags (optional)",
+      "tags_placeholder": "Comma-separated tags (e.g., transport, environment, budget)",
+      "tags_hint": "Separate tags with commas",
+      "save_draft": "Save as Draft",
+      "publish": "Publish Now",
+      "saving": "Saving...",
+      "publishing": "Publishing...",
+      "tips": {
+        "title": "Tips for creating effective polls:",
+        "clear": "Keep your question clear and concise",
+        "balanced": "Provide balanced and distinct options",
+        "context": "Add context in the description to help voters decide",
+        "tags": "Use tags to help people discover your poll",
+        "draft": "Save as draft first to review before publishing"
+      }
+    }
+  },
+  "comments": {
+    "title": "Discussion",
+    "add": "Add a comment",
+    "placeholder": "Share your thoughts...",
+    "submit": "Post Comment",
+    "cancel": "Cancel",
+    "posting": "Posting...",
+    "no_comments": "No comments yet. Be the first to share your thoughts!",
+    "login_prompt": "Please login to join the discussion",
+    "sort": {
+      "best": "Best",
+      "newest": "Newest",
+      "controversial": "Controversial"
+    },
+    "edited": "(edited)",
+    "edit_history": "Edit History:",
+    "report": {
+      "title": "Report Comment",
+      "why": "Why are you reporting this comment?",
+      "spam": {
+        "title": "Spam",
+        "description": "Unwanted commercial content or repetitive posts"
+      },
+      "hate": {
+        "title": "Hate Speech",
+        "description": "Discriminatory or hateful language"
+      },
+      "harassment": {
+        "title": "Harassment",
+        "description": "Bullying, threats, or personal attacks"
+      },
+      "off_topic": {
+        "title": "Off Topic",
+        "description": "Not relevant to the discussion"
+      },
+      "cancel": "Cancel",
+      "success": "Comment reported. Thank you for helping keep our community safe."
+    },
+    "reported": "This comment has been reported {{count}} time(s)"
+  },
+  "commitments": {
+    "title": "Government Commitments",
+    "no_commitments": "No commitments yet",
+    "responsible": "Responsible:",
+    "budget": "Budget:",
+    "target": "Target:",
+    "version": "Version {{version}}",
+    "status": {
+      "planned": "Planned",
+      "in_progress": "In Progress",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "back_home": "Back to home",
+    "characters": "characters"
+  }
+}

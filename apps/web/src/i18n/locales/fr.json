@@ -1,0 +1,164 @@
+{
+  "app": {
+    "name": "Democracy OS",
+    "tagline": "Participation Démocratique Simplifiée"
+  },
+  "nav": {
+    "home": "Accueil",
+    "polls": "Sondages",
+    "commitments": "Engagements",
+    "login": "Connexion",
+    "register": "Inscription",
+    "logout": "Déconnexion"
+  },
+  "home": {
+    "hero": {
+      "title": "Participation Démocratique Simplifiée",
+      "description": "Engagez-vous avec votre communauté, votez anonymement sur des questions importantes et tenez vos représentants responsables avec une transparence totale.",
+      "cta_polls": "Voir les Sondages Actifs",
+      "cta_commitments": "Suivre les Engagements"
+    },
+    "features": {
+      "anonymous": {
+        "title": "Vote Anonyme",
+        "description": "Vos votes sont complètement anonymes tout en empêchant le double vote grâce aux annulateurs cryptographiques."
+      },
+      "transparent": {
+        "title": "Transparence Totale",
+        "description": "Suivez les engagements gouvernementaux avec un historique complet et des pistes d'audit inviolables."
+      },
+      "discussion": {
+        "title": "Discussion Communautaire",
+        "description": "Participez à des discussions modérées avec vote positif et signalement pour maintenir des conversations de qualité."
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bon Retour",
+      "subtitle": "Connectez-vous pour participer à la démocratie",
+      "email": "Adresse Email",
+      "password": "Mot de Passe",
+      "submit": "Connexion",
+      "no_account": "Vous n'avez pas de compte?",
+      "register_link": "S'inscrire"
+    },
+    "register": {
+      "title": "Rejoindre Democracy OS",
+      "subtitle": "Créez votre compte pour commencer à participer",
+      "display_name": "Nom d'Affichage",
+      "email": "Adresse Email",
+      "password": "Mot de Passe",
+      "password_hint": "Doit contenir au moins 8 caractères avec majuscule, minuscule et chiffre",
+      "submit": "S'inscrire",
+      "have_account": "Vous avez déjà un compte?",
+      "login_link": "Connexion"
+    }
+  },
+  "polls": {
+    "title": "Sondages Actifs",
+    "create": "Créer un Sondage",
+    "no_polls": "Aucun sondage actif pour le moment",
+    "create_first": "Créer le premier sondage",
+    "options": "options",
+    "vote": "Voter",
+    "detail": {
+      "back": "Retour aux sondages",
+      "cast_vote": "Votez",
+      "submit_vote": "Soumettre le Vote",
+      "submitting": "Envoi en cours...",
+      "voted": "Vous avez voté! Vous pouvez mettre à jour votre vote ci-dessous ou voir les résultats.",
+      "results": "Résultats",
+      "total_votes": "votes au total",
+      "your_vote": "(Votre vote)",
+      "update_vote": "Mettre à jour votre vote",
+      "update": "Mettre à Jour",
+      "updating": "Mise à jour..."
+    },
+    "create_poll": {
+      "title": "Créer un Nouveau Sondage",
+      "poll_title": "Titre du Sondage",
+      "description": "Description (facultatif)",
+      "description_placeholder": "Fournir plus de contexte sur ce sondage...",
+      "options": "Options du Sondage",
+      "options_min": "(minimum 2)",
+      "add_option": "Ajouter une Option",
+      "remove": "Supprimer",
+      "tags": "Étiquettes (facultatif)",
+      "tags_placeholder": "Étiquettes séparées par des virgules (ex: transport, environnement, budget)",
+      "tags_hint": "Séparez les étiquettes par des virgules",
+      "save_draft": "Enregistrer comme Brouillon",
+      "publish": "Publier Maintenant",
+      "saving": "Enregistrement...",
+      "publishing": "Publication...",
+      "tips": {
+        "title": "Conseils pour créer des sondages efficaces:",
+        "clear": "Gardez votre question claire et concise",
+        "balanced": "Fournir des options équilibrées et distinctes",
+        "context": "Ajouter du contexte dans la description pour aider les électeurs à décider",
+        "tags": "Utilisez des étiquettes pour aider les gens à découvrir votre sondage",
+        "draft": "Enregistrez d'abord comme brouillon pour réviser avant de publier"
+      }
+    }
+  },
+  "comments": {
+    "title": "Discussion",
+    "add": "Ajouter un commentaire",
+    "placeholder": "Partagez vos pensées...",
+    "submit": "Publier le Commentaire",
+    "cancel": "Annuler",
+    "posting": "Publication...",
+    "no_comments": "Pas encore de commentaires. Soyez le premier à partager vos pensées!",
+    "login_prompt": "Veuillez vous connecter pour rejoindre la discussion",
+    "sort": {
+      "best": "Meilleur",
+      "newest": "Plus Récent",
+      "controversial": "Controversé"
+    },
+    "edited": "(modifié)",
+    "edit_history": "Historique des Modifications:",
+    "report": {
+      "title": "Signaler le Commentaire",
+      "why": "Pourquoi signalez-vous ce commentaire?",
+      "spam": {
+        "title": "Spam",
+        "description": "Contenu commercial non désiré ou publications répétitives"
+      },
+      "hate": {
+        "title": "Discours de Haine",
+        "description": "Langage discriminatoire ou haineux"
+      },
+      "harassment": {
+        "title": "Harcèlement",
+        "description": "Intimidation, menaces ou attaques personnelles"
+      },
+      "off_topic": {
+        "title": "Hors Sujet",
+        "description": "Non pertinent pour la discussion"
+      },
+      "cancel": "Annuler",
+      "success": "Commentaire signalé. Merci d'aider à garder notre communauté sûre."
+    },
+    "reported": "Ce commentaire a été signalé {{count}} fois"
+  },
+  "commitments": {
+    "title": "Engagements Gouvernementaux",
+    "no_commitments": "Aucun engagement pour le moment",
+    "responsible": "Responsable:",
+    "budget": "Budget:",
+    "target": "Objectif:",
+    "version": "Version {{version}}",
+    "status": {
+      "planned": "Planifié",
+      "in_progress": "En Cours",
+      "delivered": "Livré",
+      "cancelled": "Annulé"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "back_home": "Retour à l'accueil",
+    "characters": "caractères"
+  }
+}
