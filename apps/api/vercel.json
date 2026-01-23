@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "cd ../.. && pnpm install && pnpm -r build",
-  "installCommand": "echo 'Using buildCommand for install'",
+  "installCommand": "cd ../.. && pnpm install",
+  "buildCommand": "cd ../.. && pnpm -r build",
   "functions": {
     "api/index.js": {
       "includeFiles": "../dist/**"
