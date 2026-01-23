@@ -4,7 +4,7 @@
   "private": true,
   "main": "./dist/index.js",
   "scripts": {
-    "build": "npx tsc",
+    "build": "pnpm exec tsc",
     "dev": "tsx watch src/bootstrap.ts",
     "start": "node dist/index.js",
     "clean": "rm -rf dist",
