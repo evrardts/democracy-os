@@ -2,15 +2,18 @@
   "version": 2,
   "installCommand": "pnpm install --frozen-lockfile --prod=false",
   "buildCommand": "pnpm -w run build:vercel",
-  "outputDirectory": "apps/api",
-  "functions": {
-    "apps/api/api/index.js": {
-      "includeFiles": "apps/api/dist/**"
+  "builds": [
+    {
+      "src": "apps/api/api/index.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["apps/api/dist/**", "packages/*/dist/**"]
+      }
     }
-  },
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/apps/api/api/index.js" },
-    { "source": "/health", "destination": "/apps/api/api/index.js" },
-    { "source": "/(.*)", "destination": "/apps/api/api/index.js" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/apps/api/api/index.js" },
+    { "src": "/health", "dest": "/apps/api/api/index.js" },
+    { "src": "/(.*)", "dest": "/apps/api/api/index.js" }
   ]
 }
