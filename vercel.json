@@ -1,7 +1,7 @@
 {
   "version": 2,
   "installCommand": "pnpm install --frozen-lockfile --prod=false",
-  "buildCommand": "pnpm -r build",
+  "buildCommand": "node node_modules/typescript/bin/tsc -p packages/shared && node node_modules/typescript/bin/tsc -p packages/crypto && node node_modules/typescript/bin/tsc -p packages/database && node node_modules/typescript/bin/tsc -p apps/api",
   "outputDirectory": "apps/api",
   "functions": {
     "apps/api/api/index.js": {
