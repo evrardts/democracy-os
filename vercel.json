@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm -r build",
+  "outputDirectory": "apps/api",
+  "functions": {
+    "apps/api/api/index.js": {
+      "includeFiles": "apps/api/dist/**"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/apps/api/api/index.js" },
+    { "source": "/health", "destination": "/apps/api/api/index.js" },
+    { "source": "/(.*)", "destination": "/apps/api/api/index.js" }
+  ]
+}
