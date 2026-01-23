@@ -1,7 +1,9 @@
 {
   "version": 2,
+  "framework": null,
   "installCommand": "pnpm install --frozen-lockfile --prod=false",
   "buildCommand": "pnpm -w run build:vercel",
+  "outputDirectory": ".",
   "builds": [
     {
       "src": "apps/api/api/index.js",
