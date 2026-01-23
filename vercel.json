@@ -1,12 +1,20 @@
 {
-  "buildCommand": "pnpm install --frozen-lockfile --prod=false && pnpm -w run build:vercel && mkdir -p public",
-  "outputDirectory": "public",
-  "functions": {
-    "api/index.js": {
-      "includeFiles": "apps/api/dist/**,packages/*/dist/**"
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "buildCommand": "pnpm install --frozen-lockfile --prod=false && pnpm -w run build:vercel",
+        "outputDirectory": "public"
+      }
+    },
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
     }
-  },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index.js" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/index.js" }
   ]
 }
