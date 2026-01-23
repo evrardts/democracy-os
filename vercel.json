@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "installCommand": "pnpm install",
-  "buildCommand": "pnpm -r build",
-  "outputDirectory": "apps/api",
-  "framework": null
-}
