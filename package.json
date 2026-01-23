@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "dev": "pnpm --parallel -r dev",
-    "build": "pnpm -r build",
-    "build:vercel": "node node_modules/typescript/bin/tsc -p packages/shared && node node_modules/typescript/bin/tsc -p packages/crypto && node node_modules/typescript/bin/tsc -p packages/database && node node_modules/typescript/bin/tsc -p apps/api",
+    "build": "node node_modules/typescript/bin/tsc -p packages/shared && node node_modules/typescript/bin/tsc -p packages/crypto && node node_modules/typescript/bin/tsc -p packages/database && node node_modules/typescript/bin/tsc -p apps/api",
+    "build:local": "pnpm -r build",
     "test": "pnpm -r test",
     "lint": "pnpm -r lint",
     "clean": "pnpm -r clean && rm -rf node_modules",
