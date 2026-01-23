@@ -1,7 +1,7 @@
 {
   "version": 2,
   "installCommand": "pnpm install --frozen-lockfile --prod=false",
-  "buildCommand": "node node_modules/typescript/bin/tsc -p packages/shared/tsconfig.json && node node_modules/typescript/bin/tsc -p packages/crypto/tsconfig.json && node node_modules/typescript/bin/tsc -p packages/database/tsconfig.json && node node_modules/typescript/bin/tsc -p apps/api/tsconfig.json",
+  "buildCommand": "pnpm run build:vercel",
   "outputDirectory": "apps/api",
   "functions": {
     "apps/api/api/index.js": {
